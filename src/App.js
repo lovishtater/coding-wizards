@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import {
   Text
 } from 'react-native';
@@ -8,7 +7,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/Home';
-import Login from './screens/Edit';
+import Login from './screens/Login';
 // import Add from './screens/Add';
 
 const stack = createStackNavigator();
