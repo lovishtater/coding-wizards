@@ -11,6 +11,8 @@ import {
 } from '@react-native-google-signin/google-signin';
 
 const image = { uri: "https://i.ibb.co/KsR6Lzf/background-3x.png" };
+const WhiteLogoimage = { uri: "https://i.ibb.co/TvC1Gwg/white-third-eye-logo.png" };
+
 const Login = () => {
   // GoogleSignin.configure();
   // signIn = async () => {
@@ -65,6 +67,10 @@ const Login = () => {
       <>
         <View style={styles.container}>
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+    <Image style={{    flex: .3, 
+   justifyContent: "center",
+   alignSelf: "center",
+    resizeMode: "contain", width:"80%"}} source={WhiteLogoimage}/>
               <Card>
   <Card.Title>Log In</Card.Title>
 
@@ -79,7 +85,7 @@ const Login = () => {
 
 <SocialIcon
   title='Sign In With Facebook'
-  
+  button
   type='facebook'
 />
 {/* <SocialIcon
@@ -89,7 +95,7 @@ const Login = () => {
 /> */}
 <SocialIcon
   title='Sign In With Github'
-  
+  button
   type='github'
 />
   <Card.Divider/>
@@ -110,7 +116,9 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: "center"
+   justifyContent: "center",
+    resizeMode: "contain",
+
   },
   text: {
     color: "white",

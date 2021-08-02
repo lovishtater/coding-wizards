@@ -15,22 +15,24 @@ const Home = ({navigation}) => {
     <>
     <StatusBar backgroundColor="#fff" />
 <View style={styles.container}>
-    <Image style={styles.imageLogo} source={BlackLogoimage} />
     <ImageBackground source={BackgroundImg} resizeMode="cover" style={styles.image}>
-
+<Image style={{    flex: .3, 
+   justifyContent: "center",
+   alignSelf: "center",
+    resizeMode: "contain", width:"80%"}} source={WhiteLogoimage}/>
         <View style={styles.girdContainer}>
             
             <TouchableOpacity style={styles.box1}>
                     <Text style={[styles.text1,{color:"#EC0101"}]}>    
-                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={85} color="#EC0101"/>
+                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={75} color="#EC0101"/>
                     EMERGENCY</Text>
             </TouchableOpacity>
 
             <Divider style={{ width: "90%", margin: 18 }} color="#FFF" insetType="middle" subHeaderStyle={{}} width={1}
                 orientation="horizontal" />
 
-            <TouchableOpacity style={styles.box1}>
-                <Icon.Button name="map" backgroundColor="#71EFA3" size={65} color="#1F441E">
+            <TouchableOpacity style={[styles.box1,{backgroundColor: '#71EFA3',}]}>
+                <Icon.Button name="map" backgroundColor="#71EFA3" size={60} color="#1F441E">
                     <Text style={styles.text1}>Your Location</Text>
                 </Icon.Button>
             </TouchableOpacity>
@@ -85,6 +87,7 @@ const styles = StyleSheet.create({
     width: 400,
     height: 50,
     top:0
+
   },
   text: {
     color: "#000",
@@ -120,14 +123,13 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
    box1: {
-    opacity:.8,
     height:  110,
     alignItems: "center",
     justifyContent: "center",
     width: "95%",
     margin: 6,
     backgroundColor: "#fff",
-    borderRadius: 5,
+    borderRadius: 15,
 
     shadowColor: "#393e46",
     elevation: 5,
@@ -140,7 +142,7 @@ const styles = StyleSheet.create({
     width: "46%",
     margin: 6,
     backgroundColor: "#C2FFD9",
-    borderRadius: 5,
+    borderRadius: 12,
 
     shadowColor: "#393e46",
     elevation: 5,
