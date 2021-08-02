@@ -5,9 +5,14 @@ import {createMaterialBottomTabNavigator} from '@react-navigation/material-botto
 const Tab = createMaterialBottomTabNavigator();
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 // import { createStackNavigator } from '@react-navigation/stack';
 import Home from './Screens/Home.js';
 import Login from './Screens/Login.js';
+import Blog from './Screens/Blog';
+import Profile from './Screens/Profile';
+
 // import Add from './screens/Add';
 
 const App = () => {
@@ -15,7 +20,7 @@ const App = () => {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Feed"
-        activeColor="#e91e63"
+        activeColor="#e91e64"
         barStyle={{backgroundColor: 'white'}}>
         <Tab.Screen
           name="Feed"
@@ -23,7 +28,7 @@ const App = () => {
           options={{
             tabBarLabel: 'Home',
             tabBarIcon: ({tintColor}) => (
-              <Text style={{color: tintColor}}>h</Text>
+              <Text style={{color: tintColor}}><Icon name="home"></Icon></Text>
             ),
             
           }}
@@ -33,20 +38,29 @@ const App = () => {
           component={Login}
           options={{
             tabBarLabel: 'Updates',
+            tabBarIcon: ({tintColor}) => (
+              <Text style={{color: tintColor}}><Icon name="home"></Icon></Text>
+            ),
           }}
         />
         <Tab.Screen
           name="Login"
-          component={Login}
+          component={Blog}
           options={{
-            tabBarLabel: 'Updates',
+            tabBarLabel: 'Learn',
+            tabBarIcon: ({tintColor}) => (
+              <Text style={{color: tintColor}}><Icon name="home"></Icon></Text>
+            ),
           }}
         />
         <Tab.Screen
           name="Profile"
-          component={Home}
+          component={Profile}
           options={{
             tabBarLabel: 'Profile',
+            tabBarIcon: ({tintColor}) => (
+              <Text style={{color: tintColor}}><Icon name="user"></Icon></Text>
+            ),
           }}
         />
       </Tab.Navigator>
