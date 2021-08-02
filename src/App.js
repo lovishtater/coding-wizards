@@ -22,10 +22,21 @@ const App = () => {
           component={Home}
           options={{
             tabBarLabel: 'Home',
+            tabBarIcon: ({tintColor}) => (
+              <Text style={{color: tintColor}}>h</Text>
+            ),
+            
           }}
         />
         <Tab.Screen
           name="Notifications"
+          component={Login}
+          options={{
+            tabBarLabel: 'Updates',
+          }}
+        />
+        <Tab.Screen
+          name="Login"
           component={Login}
           options={{
             tabBarLabel: 'Updates',

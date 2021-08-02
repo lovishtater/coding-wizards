@@ -1,16 +1,23 @@
 import React from 'react';
-import {StyleSheet, Touchable, TouchableOpacity} from 'react-native';
-import {Text} from 'native-base';
-import FooterTabs from '../components/Footer';
+import { StyleSheet,ImageBackground } from 'react-native'
+import { View, Text, Image } from 'react-native'
+import { Card, ListItem, Button, Icon ,SocialIcon,Header} from 'react-native-elements'
+import Login from './Login';
+// onPress={() => navigation.navigate('Login')}
+const image = { uri: "https://i.ibb.co/KsR6Lzf/background-3x.png" };
 const Home = ({navigation}) => {
   return (
     <>
-      <TouchableOpacity
-        style={styles.container}
-        onPress={() => navigation.navigate('Login')}>
-        <Text>Go to Login homee Screen </Text>
-      </TouchableOpacity>
-      {/* <FooterTabs/> */}
+      <View style={styles.container}>
+    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+              <Card>
+  <Card.Title>Home screen </Card.Title>
+
+  <Card.Divider/>
+
+</Card>
+    </ImageBackground>
+  </View>
     </>
   );
 };
@@ -33,4 +40,17 @@ const styles = StyleSheet.create({
   formItem: {
     marginBottom: 20,
   },
+    image: {
+    flex: 1,
+    justifyContent: "center"
+  },
+  text: {
+    color: "white",
+    fontSize: 42,
+    lineHeight: 84,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#000000c0"
+  }
 });
+
