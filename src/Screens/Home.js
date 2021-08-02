@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet,ImageBackground, StatusBar,View, Text, Image ,TouchableOpacity} from 'react-native'
-import { Divider, Card, ListItem, Button ,SocialIcon,Header} from 'react-native-elements'
+import { StyleSheet,ImageBackground, StatusBar,View,  Image ,TouchableOpacity} from 'react-native'
+import { Divider, Card, ListItem, Button ,SocialIcon,Header ,Text} from 'react-native-elements'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Login from './Login';
 // onPress={() => navigation.navigate('Login')}
@@ -21,9 +21,9 @@ const Home = ({navigation}) => {
         <View style={styles.girdContainer}>
             
             <TouchableOpacity style={styles.box1}>
-                <Icon.Button  name="exclamation-triangle" backgroundColor="#fff" size={85} color="#EC0101">
-                    <Text style={[styles.text1,{color:"#EC0101"}]}>EMERGENCY</Text>
-                </Icon.Button>
+                    <Text style={[styles.text1,{color:"#EC0101"}]}>    
+                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={85} color="#EC0101"/>
+                    EMERGENCY</Text>
             </TouchableOpacity>
 
             <Divider style={{ width: "90%", margin: 18 }} color="#FFF" insetType="middle" subHeaderStyle={{}} width={1}
@@ -35,14 +35,17 @@ const Home = ({navigation}) => {
                 </Icon.Button>
             </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
-                <Text style={styles.text2}>hye</Text>
+            <Text style={styles.text2}>
+
+                <Icon name="pencil" backgroundColor="#71EFA3" size={15} color="#1F441E"/>
+            update</Text>
                 <Text style={styles.text}>hye</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
                 <Text style={styles.text}>hye</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
-                <Text style={styles.text}>hye</Text>
+                <Text >hye</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
                 <Text style={styles.text}>hye</Text>
@@ -117,6 +120,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
    box1: {
+    opacity:.8,
     height:  110,
     alignItems: "center",
     justifyContent: "center",
