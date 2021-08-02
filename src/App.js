@@ -1,53 +1,46 @@
-
 import React from 'react';
-import {
-  Text
-} from 'react-native';
+import {Text} from 'react-native';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+
+const Tab = createMaterialBottomTabNavigator();
 import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Home from './screens/Home';
-import Login from './screens/Login';
+import {NavigationContainer} from '@react-navigation/native';
+// import { createStackNavigator } from '@react-navigation/stack';
+import Home from './Screens/Home.js';
+import Login from './Screens/Login.js';
 // import Add from './screens/Add';
 
-const stack = createStackNavigator();
-
 const App = () => {
-  return(
-<NavigationContainer>
-  <stack.Navigator initialRouteName='home'>
-  <stack.Screen 
-  name='Home'
-  component={Home}
-  options={{headerStyle:
-  {backgroundColor:'#0f4c75'},
-  title:'Safety  App',
-  headerTitleStyle:{
-    textAlign:'center',
-    color:'#00b7c2'
-  }
-  }}
-  >
-
-  </stack.Screen>
-  <stack.Screen 
-  name='Login'
-  component={Login}
-  options={{headerStyle:
-  {backgroundColor:'#0f4c75'},
-  title:'Safety App',
-  headerTitleStyle:{
-    textAlign:'center',
-    color:'#00b7c2'
-  }}}
-  >
-  </stack.Screen>
-
-  
-
-  </stack.Navigator>
-</NavigationContainer>
-  )
-}
+  return (
+    <NavigationContainer>
+      <Tab.Navigator
+        initialRouteName="Feed"
+        activeColor="#e91e63"
+        barStyle={{backgroundColor: 'white'}}>
+        <Tab.Screen
+          name="Feed"
+          component={Home}
+          options={{
+            tabBarLabel: 'Home',
+          }}
+        />
+        <Tab.Screen
+          name="Notifications"
+          component={Login}
+          options={{
+            tabBarLabel: 'Updates',
+          }}
+        />
+        <Tab.Screen
+          name="Profile"
+          component={Home}
+          options={{
+            tabBarLabel: 'Profile',
+          }}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default App;
