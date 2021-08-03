@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyleSheet,ImageBackground } from 'react-native'
-import { ScrollView, Text, Image } from 'react-native'
+import { StatusBar,ScrollView, Text, Image } from 'react-native'
 import { Divider, Card, ListItem, Button, Icon ,SocialIcon,Header} from 'react-native-elements'
 import Login from './Login';
 // onPress={() => navigation.navigate('Login')}
 const image = { uri: "https://i.ibb.co/KsR6Lzf/background-3x.png" };
 // https://i.ibb.co/thg5S5b/Whats-App-Image-2021-08-02-at-9-11-26-PM.jpg
 const WhiteLogoimage = { uri: "https://i.ibb.co/TvC1Gwg/white-third-eye-logo.png" };
+const BlackLogoimage = { uri: "https://i.ibb.co/nBBB7hY/black-third-eye-logo.png" };
+
 
 const Blog = ({navigation}) => {
   return (
     //SOS
     <>
-      <ScrollView>
+    <StatusBar source={image} />
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-        <Image style={{    flex: .3, 
-   justifyContent: "center",
-   alignSelf: "center",
-    resizeMode: "contain", width:"80%"}} source={WhiteLogoimage}/>
+      <ScrollView>
+      <Card.Image style={{ alignSelf: "center",
+    resizeMode: "contain", width:"100%"}}  source={WhiteLogoimage}/>
 <Card>
   <Card.Title>Safety Measures</Card.Title>
   <Card.Divider/>
@@ -56,8 +57,8 @@ const Blog = ({navigation}) => {
       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
       title='VIEW NOW' />
 </Card>
-    </ImageBackground>
   </ScrollView>
+    </ImageBackground>
     </>
   );
 };
