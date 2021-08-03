@@ -39,22 +39,22 @@ const Home = ({navigation}) => {
             <TouchableOpacity style={[styles.box,{backgroundColor:"#FF5F81"}]}>
                 <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
             <Text style={styles.text2} >  
-            Emergency contact</Text>
+            Create Emergency Contact</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.box,{backgroundColor:"#A469C2"}]}>
-                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                <Icon name="user-o" backgroundColor="#71EFA3" size={25} color="#fff"/>
                 
-                <Text style={styles.text2} >hye</Text>
+                <Text style={styles.text2} >View Emergency Contact</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.box,{backgroundColor:"#55D38A"}]}>
-                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                <Icon name="handshake-o" backgroundColor="#71EFA3" size={25} color="#fff"/>
                 
-                <Text style={styles.text2}>hye</Text>
+                <Text style={styles.text2}>Local Help</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.box,{backgroundColor:"#5DAEE1"}]}>
-                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                <Icon name="podcast" backgroundColor="#71EFA3" size={25} color="#fff"/>
                 
-                <Text style={styles.text2}>hye</Text>
+                <Text style={styles.text2}> Scream Alert</Text>
             </TouchableOpacity>
             
             
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   },
     text2: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 15,
     textAlign: "center",
 
     
