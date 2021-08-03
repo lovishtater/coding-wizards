@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text} from 'react-native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 const Tab = createMaterialBottomTabNavigator();
 import 'react-native-gesture-handler';
-import {NavigationContainer} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 // import { createStackNavigator } from '@react-navigation/stack';
@@ -12,9 +12,10 @@ import Home from './Screens/Home.js';
 import Login from './Screens/Login.js';
 import Blog from './Screens/Blog';
 import Profile from './Screens/Profile';
+import EmergencyContact from './Screens/EmergencyContact';
 
 // import Add from './screens/Add';
-
+const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
@@ -64,6 +65,11 @@ const App = () => {
           }}
         />
       </Tab.Navigator>
+       {/* <Stack.Navigator>
+              <Stack.Screen name="EmergencyContact" component={EmergencyContact} />
+    
+          
+        </Stack.Navigator> */}
     </NavigationContainer>
   );
 };

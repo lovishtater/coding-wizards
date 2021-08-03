@@ -4,6 +4,7 @@ import { Divider, Card, ListItem, Button ,SocialIcon,Header ,Text} from 'react-n
 import { white } from 'react-native-paper/lib/typescript/styles/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Login from './Login';
+import EmergencyContact from './EmergencyContact';
 import w from "../assets/3women.png"
 // onPress={() => navigation.navigate('Login')}
 const BackgroundImg = { uri: "https://i.ibb.co/KsR6Lzf/background-3x.png" };
@@ -41,7 +42,9 @@ const Home = ({navigation}) => {
             <Text style={styles.text2} >  
             Create Emergency Contact</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[styles.box,{backgroundColor:"#A469C2"}]}>
+            <TouchableOpacity style={[styles.box,{backgroundColor:"#A469C2"}]} 
+            // onPress={()=>navigation.navigate("EmergencyContact")}
+            >
                 <Icon name="user-o" backgroundColor="#71EFA3" size={25} color="#fff"/>
                 
                 <Text style={styles.text2} >View Emergency Contact</Text>
