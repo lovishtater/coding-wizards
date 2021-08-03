@@ -25,9 +25,9 @@ This project is based on React-native and firebase.
 
 ## Demo
 
-|![image](https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg ) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg) |
+|![image](https://github.com/lovishtater/coding-wizards/blob/main/assets/WhatsApp%20Image%202021-08-03%20at%209.17.48%20PM.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/assets/WhatsApp%20Image%202021-08-03%20at%209.11.21%20PM.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/assets/nearbypolice.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/assets/WhatsApp%20Image%202021-08-03%20at%209.11.28%20PM.jpeg) |
 | :-------------: | :-------------:  | :-------------:  | :-------------:  | :-------------:  |
-|     LogIn     |    Home Page    |    Location     |     Text Message      |     Education     |
+|     Login     |    Home Page    |    Location     |     Text Message      |     Education     |
 
 
 ## Dependencies
