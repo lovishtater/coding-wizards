@@ -9,7 +9,7 @@ This project is based on React-native and firebase.
 ## Women-Safety-App
 
 - It is built with react native and native-base framework.
-- The aim of our application is to make women feel as strong as ever, strong enough to fight the odds, strong enough to protect themselves against any sexual assaults. A system which shall re-establish how very gregarious mankind is. This system shall geotag and send SOS alert to the nearest police station, close contacts, scream feature and also alert people in and around the venue of the crime, everything just at a click of a button. The idea is to make up for the time it takes police to arrive at the location.
+- The aim of our application is to make women feel as strong as ever, strong enough to fight the odds, strong enough to protect themselves against any sexual assaults. A system which shall re-establish how very gregarious mankind is. ***This system shall geotag and send SOS alert to the nearest police station, close contacts, scream feature and also alert people in and around the venue of the crime, everything just at a click of a button. The idea is to make up for the time it takes police to arrive at the location.***
 
 ## Technologies Used:
 1.	React native
