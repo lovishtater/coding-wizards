@@ -24,17 +24,10 @@ This project is based on React-native and firebase.
 3. [Installation](#installation)
 
 ## Demo
-<p float="left">
-<img src="https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg" width="400" height="400">
-<img src="https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg" width="300" height="400">
-</p>
 
-<p float="left">
-<img src="https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg" width="300" height="400">
-<img src="https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg" width="300" height="400">
-   <img src="https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg" width="300" height="400">
-</p>
-
+|![image](https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg ) | ![image](https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg) |
+| :-------------: | :-------------:  | :-------------:  | :-------------:  | :-------------:  |
+|     LogIn     |    Home Page    |    Location     |     Text Message      |     Education     |
 
 
 ## Dependencies
