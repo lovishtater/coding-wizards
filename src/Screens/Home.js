@@ -20,32 +20,46 @@ const Home = ({navigation}) => {
     <StatusBar backgroundColor="#fff" />
 <View style={styles.container}>
     <ImageBackground source={BackgroundImg} resizeMode="cover" style={styles.image}>
-<Image style={{    flex: .3, 
+<Image style={{    flex: .2, 
    justifyContent: "center",
    alignSelf: "center",
     resizeMode: "contain", width:"80%"}} source={WhiteLogoimage}/>
+
         <View style={styles.girdContainer}>
             
             <TouchableOpacity style={styles.box1}>
                     <Text style={[styles.text1,{color:"#EC0101"}]}>    
-                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={65} color="#EC0101"/>
+                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={40} color="#EC0101"/>
                     EMERGENCY</Text>
             </TouchableOpacity>
 
             <Divider style={{ width: "90%", margin: 18 }} color="#000" insetType="middle" subHeaderStyle={{}} width={1}
                 orientation="horizontal" />
 
-            <TouchableOpacity style={styles.box}>
-            <Text h4>  
-                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#1F441E"/>
+            <TouchableOpacity style={[styles.box,{backgroundColor:"#FF5F81"}]}>
+                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+            <Text style={styles.text2} >  
             Emergency contact</Text>
-                <Text style={styles.text}>hye</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.box}>
-                <Text h>hye</Text>
+            <TouchableOpacity style={[styles.box,{backgroundColor:"#A469C2"}]}>
+                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                
+                <Text style={styles.text2} >hye</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.box,{backgroundColor:"#55D38A"}]}>
+                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                
+                <Text style={styles.text2}>hye</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.box,{backgroundColor:"#5DAEE1"}]}>
+                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#fff"/>
+                
+                <Text style={styles.text2}>hye</Text>
             </TouchableOpacity>
             
+            
         </View>
+    <Image style={{ flex: .3, justifyContent: "center", alignSelf: "center", resizeMode: "contain", width:"80%"}} source={require("../assets/3women.png")} />
 
     </ImageBackground>
 </View>
@@ -83,7 +97,7 @@ const styles = StyleSheet.create({
 
   },
   text: {
-    color: "#000",
+    color: "#fff",
     fontSize: 12,
     lineHeight: 50,
     fontFamily: 'merriweather',
@@ -92,17 +106,16 @@ const styles = StyleSheet.create({
   },
     text1: {
     color: "#000",
-    fontSize: 42,
-    lineHeight: 84,
+    fontSize: 40,
+    lineHeight: 100,
     fontWeight: "bold",
     textAlign: "center",
     fontFamily: "montserrat"
     
   },
     text2: {
-    color: "#000",
-    fontSize: 42,
-    fontWeight: "bold",
+    color: "#fff",
+    fontSize: 20,
     textAlign: "center",
 
     
@@ -115,18 +128,19 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "space-around",
     backgroundColor:"#fff",
-    borderTopRightRadius: 10,
-    borderTopLeftRadius: 10,
+    borderRadius: 15,
+    padding: 10,
   },
    box1: {
-    height:  110,
+    height:  "30%",
     alignItems: "center",
     justifyContent: "center",
     width: "85%",
     margin: 6,
     backgroundColor: "#fff",
     borderRadius: 15,
-
+    borderWidth:4,
+    borderColor:"#EC0101",
     shadowColor: "#393e46",
     elevation: 5,
   },
