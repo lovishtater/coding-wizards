@@ -25,7 +25,11 @@ This project is based on React-native and firebase.
 
 ## Demo
 
-**Screens**
+![User Profile](https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg)
+![Automatic Send Location - Emergency Feature](https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg)
+![Nearby Police Station](https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg)
+![Safety Precautions](https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg)
+![Login](https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg)
 
 ## Dependencies
 - `@expo/vector-icons": ^12.0.5`
