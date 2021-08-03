@@ -1,12 +1,16 @@
 import React from 'react';
 import { StyleSheet,ImageBackground, StatusBar,View,  Image ,TouchableOpacity} from 'react-native'
 import { Divider, Card, ListItem, Button ,SocialIcon,Header ,Text} from 'react-native-elements'
+import { white } from 'react-native-paper/lib/typescript/styles/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Login from './Login';
+import w from "../assets/3women.png"
 // onPress={() => navigation.navigate('Login')}
 const BackgroundImg = { uri: "https://i.ibb.co/KsR6Lzf/background-3x.png" };
 const WhiteLogoimage = { uri: "https://i.ibb.co/TvC1Gwg/white-third-eye-logo.png" };
 const BlackLogoimage = { uri: "https://i.ibb.co/nBBB7hY/black-third-eye-logo.png" };
+const threeWomenimage = { uri: "https://i.ibb.co/nPLFjsz/3women.png" };
+
 
 
 const Home = ({navigation}) => {
@@ -24,34 +28,23 @@ const Home = ({navigation}) => {
             
             <TouchableOpacity style={styles.box1}>
                     <Text style={[styles.text1,{color:"#EC0101"}]}>    
-                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={75} color="#EC0101"/>
+                <Icon  name="exclamation-triangle" backgroundColor="#fff" size={65} color="#EC0101"/>
                     EMERGENCY</Text>
             </TouchableOpacity>
 
-            <Divider style={{ width: "90%", margin: 18 }} color="#FFF" insetType="middle" subHeaderStyle={{}} width={1}
+            <Divider style={{ width: "90%", margin: 18 }} color="#000" insetType="middle" subHeaderStyle={{}} width={1}
                 orientation="horizontal" />
 
-            <TouchableOpacity style={[styles.box1,{backgroundColor: '#71EFA3',}]}>
-                <Icon.Button name="map" backgroundColor="#71EFA3" size={60} color="#1F441E">
-                    <Text style={styles.text1}>Your Location</Text>
-                </Icon.Button>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
-            <Text style={styles.text2}>
-
-                <Icon name="pencil" backgroundColor="#71EFA3" size={15} color="#1F441E"/>
-            update</Text>
+            <Text h4>  
+                <Icon name="pencil" backgroundColor="#71EFA3" size={25} color="#1F441E"/>
+            Emergency contact</Text>
                 <Text style={styles.text}>hye</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.box}>
-                <Text style={styles.text}>hye</Text>
+                <Text h>hye</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.box}>
-                <Text >hye</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.box}>
-                <Text style={styles.text}>hye</Text>
-            </TouchableOpacity>
+            
         </View>
 
     </ImageBackground>
@@ -121,12 +114,15 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     alignItems: "flex-start",
     justifyContent: "space-around",
+    backgroundColor:"#fff",
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
    box1: {
     height:  110,
     alignItems: "center",
     justifyContent: "center",
-    width: "95%",
+    width: "85%",
     margin: 6,
     backgroundColor: "#fff",
     borderRadius: 15,

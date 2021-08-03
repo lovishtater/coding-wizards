@@ -19,33 +19,32 @@ const Blog = ({navigation}) => {
    alignSelf: "center",
     resizeMode: "contain", width:"80%"}} source={WhiteLogoimage}/>
 <Card>
-  <Card.Title>HELLO WORLD</Card.Title>
+  <Card.Title>Safety Measures</Card.Title>
   <Card.Divider/>
-  <Card.Image source={{uri:"https://www.shethepeople.tv/wp-content/uploads/2019/09/1.png"}} >
-  </Card.Image>
-    <Text style={{marginBottom: 10}}>
-      The idea with React Native Elements is more about component structure than actual design.
+  <Card.Image source={require("../assets/women-safety.png")} />
+  {/* </Card.Image> */}
+    <Text style={{marginBottom: 10, fontWeight:"bold"}}>
+      Top 10 Safety measures which must be implemented for women...
     </Text>
     <Button
       icon={<Icon name='code' color='#ffffff' />}
       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-      title='VIEW NOW' />
+      title='READ MORE' />
 </Card>
 <Card>
-  <Card.Title>HELLO WORLD</Card.Title>
+  <Card.Title>PROTECT YOURSELF</Card.Title>
   <Card.Divider/>
   <Card.Image source={{uri:"https://www.shethepeople.tv/wp-content/uploads/2019/09/1.png"}} >
   </Card.Image>
-    <Text style={{marginBottom: 10}}>
-      The idea with React Native Elements is more about component structure than actual design.
-    </Text>
+    <Text style={{marginBottom: 10,fontWeight:"bold"}}>
+      End voilence against women and girls   </Text>
     <Button
       icon={<Icon name='code' color='#ffffff' />}
       buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-      title='VIEW NOW' />
+      title='READ MORE' />
 </Card>
 <Card>
-  <Card.Title>HELLO WORLD</Card.Title>
+  <Card.Title>ANTI-DOWERY</Card.Title>
   <Card.Divider/>
   <Card.Image source={{uri:"https://www.shethepeople.tv/wp-content/uploads/2019/09/1.png"}} >
   </Card.Image>
