@@ -24,12 +24,18 @@ This project is based on React-native and firebase.
 3. [Installation](#installation)
 
 ## Demo
+<p float="left">
+<img src="https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg" width="400" height="400">
+<img src="https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg" width="300" height="400">
+</p>
 
-![User Profile](https://github.com/lovishtater/coding-wizards/blob/main/Profile.jpeg)
-![Automatic Send Location - Emergency Feature](https://github.com/lovishtater/coding-wizards/blob/main/automaticsendlocation.jpeg)
-![Nearby Police Station](https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg)
-![Safety Precautions](https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg)
-![Login](https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg)
+<p float="left">
+<img src="https://github.com/lovishtater/coding-wizards/blob/main/nearbypolice.jpeg" width="300" height="400">
+<img src="https://github.com/lovishtater/coding-wizards/blob/main/safetyinfo.jpeg" width="300" height="400">
+   <img src="https://github.com/lovishtater/coding-wizards/blob/main/login.jpeg" width="300" height="400">
+</p>
+
+
 
 ## Dependencies
 - `@expo/vector-icons": ^12.0.5`
